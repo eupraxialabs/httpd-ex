@@ -9,8 +9,9 @@ To build and run the application:
 
 ```
 $ s2i build https://github.com/eupraxialabs/httpd-ex centos/httpd-24-centos7 anhttpdimage
-$ docker run -p 8080:8080 anhttpdimage
-$ # browse to http://localhost:8080
+$ s2i build https://davidjbrewer:g\!thu33@github.com/eupraxialabs/httpd-ex centos/httpd-24-centos7 www-el:1.1
+$ docker run -p 8095:8080 www-el:1.1
+$ # browse to http://localhost:8095
 ```
 
 You can also build and deploy the application on OpenShift, assuming you have a

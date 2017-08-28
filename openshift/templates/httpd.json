@@ -91,9 +91,8 @@
           "type": "Source",
           "sourceStrategy": {
             "from": {
-              "kind": "ImageStreamTag",
-              "namespace": "${NAMESPACE}",
-              "name": "httpd:2.4"
+              "kind": "DockerImage",
+              "name": "docker.io/centos/httpd-24-centos7"
             }
           }
         },
