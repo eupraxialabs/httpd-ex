@@ -22,7 +22,7 @@
 </head>
 <body bgcolor="#E3F6CE">
 
-<p>Goto: <a href="/product-portal">products</a> | <a href="#" onclick="keycloak.logout()">logout</a> | <a href="#" onclick="keycloak.accountManagement()">manage acct</a></p>
+<p>Goto: <a href="/">products</a> | <a href="#" onclick="keycloak.logout()">logout</a> | <a href="#" onclick="keycloak.accountManagement()">manage acct</a></p>
 
 User <b id="subject"></b> made this request.
 <p><b>User details (from <span id="profileType"></span>)</b></p>
@@ -36,7 +36,7 @@ User <b id="subject"></b> made this request.
 <div id="customers"></div>
 
 <script>
-    var keycloak = Keycloak('../keycloak.json');
+    var keycloak = Keycloak('/auth/keycloak.json');
 
     var loadData = function () {
         document.getElementById('subject').innerHTML = keycloak.subject;
