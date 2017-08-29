@@ -1,0 +1,7 @@
+{
+  "realm": "eupraxialabs",
+  "auth-server-url": "https://keycloak-iam-iam.b9ad.pro-us-east-1.openshiftapps.com/",
+  "ssl-required": "external",
+  "resource": "urn:eurpaxialabs:website",
+  "public-client": true
+}
